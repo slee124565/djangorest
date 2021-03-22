@@ -8,4 +8,4 @@ before_script: pip install docker-compose
 
 # command to run tests
 script:
-  - docker-compose run app sh -c "ls -l && python manage.py test && flake8"
+  - docker-compose run app sh -c "python manage.py test && flake8"
